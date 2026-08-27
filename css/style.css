@@ -473,27 +473,57 @@ li, ol {
 }
 
 /* RESPONSIVO */
-@media (max-width: 900px) {
-
-    .inicio, .publico {
-        grid-template-columns: 1fr;
-    }
-
+@media (min-width: 1200px) {
     .inicio {
-        text-align: center;
+        padding: 120px 10% 60px;
     }
 
-    .inicio p {
-        margin-left: auto;
-        margin-right: auto;
+    .publico,
+    .galeria {
+        padding: 100px 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inicio {
+        padding: 120px 8% 70px;
+        gap: 30px;
     }
 
-    .inicio-imagem {
-        text-align: center;
+    .inicio h1 {
+        font-size: 3.2rem;
+    }
+
+    .inicio-imagem img {
+        max-height: 500px;
     }
 
     .solucao-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .publico {
+        padding: 80px 8%;
+        gap: 50px;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .publico-titulo h1 {
+        font-size: 3rem;
+    }
+
+    .galeria {
+        padding: 80px 8%;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .galeria-item img {
+        width: 70%;
+        height: 450px;
     }
 
     .equipe-grid {
@@ -501,48 +531,170 @@ li, ol {
     }
 
     .contato-container {
-        grid-template-columns: 1fr;
         gap: 50px;
     }
 }
 
-@media (max-width: 600px) {
-
+@media (max-width: 768px) {
     .header {
-        padding: 20px 5%;
+        min-height: auto;
+        padding: 15px 5%;
         flex-direction: column;
         gap: 15px;
     }
 
     .menu-list {
-        gap: 15px;
-        font-size: 0.8rem;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 25px;
     }
 
     .inicio {
         padding: 180px 7% 70px;
     }
 
-    .solucao, .publico, .galeria, .equipe {
-        padding: 70px 7%;
+    .inicio h1 {
+        font-size: 3rem;
     }
 
-    .solucao-grid, .galeria-grid, .equipe-grid {
-        grid-template-columns: 1fr;
+    .inicio-imagem img {
+        width: 75%;
     }
 
-    .section-titulo h2, .publico-texto h2 {
+    .section-titulo h1,
+    .section-titulo h2,
+    .publico-titulo h1,
+    .contato-texto h2 {
+        font-size: 2.5rem;
+    }
+
+    .solucao {
+        padding: 80px 7%;
+    }
+
+    .solucao-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .publico {
+        padding: 80px 7%;
+    }
+
+    .galeria {
+        padding: 80px 7%;
+    }
+
+    .galeria-grid {
+        gap: 25px;
+    }
+
+    .galeria-item img {
+        width: 80%;
+        height: 380px;
+    }
+
+    .equipe {
+        padding: 80px 7%;
+    }
+
+    .contato {
+        padding: 80px 7%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.7rem;
+    }
+
+    .menu-list {
+        gap: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    .inicio {
+        padding: 180px 6% 60px;
+        gap: 30px;
+    }
+
+    .inicio h1 {
+        font-size: 2.5rem;
+    }
+
+    .inicio p {
+        font-size: 1rem;
+    }
+
+    .inicio-imagem img {
+        width: 90%;
+        max-height: 400px;
+    }
+
+    .section-titulo h1,
+    .section-titulo h2,
+    .publico-titulo h1,
+    .contato-texto h2 {
         font-size: 2rem;
     }
 
-    .galeria-grid img {
-        height: 250px;
+    .section-titulo p,
+    .publico-titulo p {
+        font-size: 0.95rem;
     }
-    
+
+    .solucao {
+        padding: 70px 6%;
+    }
+
+    .solucao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .publico {
+        min-height: auto;
+        padding: 70px 6%;
+        gap: 40px;
+    }
+
+    .perfil {
+        padding: 20px;
+    }
+
+    .perfil h3 {
+        font-size: 1.3rem;
+    }
+
+    .galeria {
+        min-height: auto;
+        padding: 70px 6%;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .galeria-item img {
+        width: 75%;
+        height: auto;
+        max-height: 500px;
+    }
+
+    .equipe {
+        padding: 70px 6%;
+    }
+
+    .equipe-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contato {
-        padding: 70px 7%;
+        padding: 70px 6%;
     }
 
     .contato-info {
@@ -550,10 +702,18 @@ li, ol {
     }
 
     .contato-form {
-        padding: 25px;
+        padding: 25px 20px;
     }
 
-    .contato-texto h2 {
-        font-size: 2rem;
+    .contato-texto h1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 20px 6%;
+    }
+
+    .topo a {
+        padding: 12px 30px;
     }
 }

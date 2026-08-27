@@ -229,6 +229,11 @@ li, ol {
     color: var(--color-white);
 }
 
+.perfil:hover{
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
 .galeria{
     min-height: 100vh;
     background-color: var(--color-black);
@@ -323,6 +328,14 @@ li, ol {
 .membro p {
     color: var(--color-white);
     margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.membro:hover {
+    transform: translateY(-8px);
+    border-color: var(--card);
+    transition: 0.3s;
 }
 
 .membro span {

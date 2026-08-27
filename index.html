@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprint 3 - JOVI</title>
-
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Google Fonts -->
@@ -16,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
 </head>
 
 <body>
@@ -28,6 +27,7 @@
                 <li><a href="#publico">Público-Alvo</a></li>
                 <li><a href="#galeria">Galeria</a</li>
                 <li><a href="#equipe">Nossa Equipe</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -203,13 +203,58 @@
 
             </div>
         </section>
+
+
+        <section id="contatos" class="contato">
+            <div class="contato-container">
+                <div class="contato-texto">
+                    <h1>CONTATOS</h1>
+                    <p>Ficou com alguma dúvida, sugestão ou gostaria de saber mais sobre a solução JOVI? Entre em contato com a nossa equipe.</p>
+                
+                    <div class="contato-info">
+                        <div class="info-item">
+                            <h3> <i class="fa-solid fa-envelope"></i> E-mail</h3>
+                            <p>nextcode@jovi.com</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3> <i class="fa-solid fa-user-group"></i> Redes sociais</h3>
+                            <p><i class="fa-brands fa-instagram"></i> @nextcode.oficial</p>
+                            <p><i class="fa-brands fa-whatsapp"></i> (11)94563-5857</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contato-form">
+                    <div class="input-grupo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="topo">
+            <a href="#inicio">Voltar ao home</a>
+        </div>
     </main>
 
-
     <footer class="footer">
-        <h2>JOVI</h2>
-        <p>Transformando a câmera do celular em uma ferramenta para aprender.</p>
-        <a href="#inicio">Voltar ao topo</a>
+        <h6>Transformando sua câmera do em uma ferramenta para aprendizagem.</h6>
+        <p>Enzo Oldani - RM571685 | Giulia Russo - RM571468 | Kauan Merida - RM573997 | Kayque Amaro - RM572031 | Victoria Bandeira - RM571183</p>
+        <p>Todos os direitos reservados</p>
     </footer>
 </body>
 </html>

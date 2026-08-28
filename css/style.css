@@ -147,10 +147,21 @@ li, ol {
     margin: 15px 0;
 }
 
-.section-titulo p, .publico-texto p {
-    color: var(--cinza);
-    line-height: 1.8;
+.section-titulo p {
+    color: var(--color-white);
+    text-align: justify;
+    padding: 15px;
 }
+
+.section-titulo1 h1{
+    text-align: center;
+}
+.section-titulo1 p{
+    text-align: center;
+    padding: 15px;
+
+}
+
 
 .solucao-grid {
     display: grid;
@@ -253,7 +264,6 @@ li, ol {
 
 .galeria-titulo p{
     font-size: var(--size-md);
-    max-width: 750px;
     margin: auto;
     line-height: 1.6;
 }
@@ -355,13 +365,6 @@ li, ol {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
-}
-
-.contato-texto span {
-    color: var(--color-azul-claro);
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 2px;
 }
 
 .contato-texto h1 {

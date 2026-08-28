@@ -514,7 +514,7 @@ li, ol {
     }
 
     .publico-titulo h1 {
-        font-size: 3rem;
+        font-size: var(--size-2xl);
     }
 
     .galeria {
@@ -601,7 +601,7 @@ li, ol {
     }
 
     .section-titulo h2, .publico-texto h2 {
-        font-size: 2rem;
+        font-size: var(--size-xl);
     }
 
     .galeria-grid img {
@@ -621,6 +621,6 @@ li, ol {
     }
 
     .contato-texto h2 {
-        font-size: 2rem;
+        font-size: var(--size-xl);
     }
 }
